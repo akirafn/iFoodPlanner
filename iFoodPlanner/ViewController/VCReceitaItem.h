@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface VCReceitaItem : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *fieldTitulo;
+@property (weak, nonatomic) IBOutlet UITextView *fieldCorpo;
 
 @end

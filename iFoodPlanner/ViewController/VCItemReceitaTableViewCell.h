@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VCItemReceitaTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *lblTitulo;
 
 @end

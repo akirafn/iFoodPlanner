@@ -8,18 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		A030C43A69AD521ACBC01927 /* libPods-iFoodPlanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AFD1E12C2E15D4E1366918 /* libPods-iFoodPlanner.a */; };
+		E942FE291F0EEBBB00795EA1 /* VCMainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E942FE281F0EEBBB00795EA1 /* VCMainScreen.m */; };
+		E9590BC01F151650005D97DA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9590BBF1F151650005D97DA /* libsqlite3.tbd */; };
+		E9590BC31F15172B005D97DA /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9590BC21F15172B005D97DA /* DBManager.m */; };
+		E9B819211F14240D00CD553E /* VCReceitaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B819201F14240D00CD553E /* VCReceitaItem.m */; };
 		E9C43FB91F0D898E00DE16EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C43FB81F0D898E00DE16EA /* main.m */; };
 		E9C43FBC1F0D898E00DE16EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C43FBB1F0D898E00DE16EA /* AppDelegate.m */; };
 		E9C43FBF1F0D898E00DE16EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C43FBE1F0D898E00DE16EA /* ViewController.m */; };
 		E9C43FC21F0D898E00DE16EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C43FC01F0D898E00DE16EA /* Main.storyboard */; };
 		E9C43FC41F0D898E00DE16EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C43FC31F0D898E00DE16EA /* Assets.xcassets */; };
 		E9C43FC71F0D898E00DE16EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C43FC51F0D898E00DE16EA /* LaunchScreen.storyboard */; };
+		E9F201D11F1025FA006A1892 /* VCListaReceitas.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F201D01F1025FA006A1892 /* VCListaReceitas.m */; };
+		E9F201D41F1026ED006A1892 /* VCListaIngredientes.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F201D31F1026ED006A1892 /* VCListaIngredientes.m */; };
+		E9F201D71F102A74006A1892 /* VCListaCozinha.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F201D61F102A74006A1892 /* VCListaCozinha.m */; };
+		E9F201DA1F1034AE006A1892 /* VCItemReceitaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F201D91F1034AE006A1892 /* VCItemReceitaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1AFD1E12C2E15D4E1366918 /* libPods-iFoodPlanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iFoodPlanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE12F25715379B0CCCE112 /* Pods-iFoodPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFoodPlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFoodPlanner/Pods-iFoodPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		E787437823E0C3DA567FA34C /* Pods-iFoodPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFoodPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFoodPlanner/Pods-iFoodPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		E942FE271F0EEBBB00795EA1 /* VCMainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCMainScreen.h; path = ViewController/VCMainScreen.h; sourceTree = "<group>"; };
+		E942FE281F0EEBBB00795EA1 /* VCMainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCMainScreen.m; path = ViewController/VCMainScreen.m; sourceTree = "<group>"; };
+		E9590BBF1F151650005D97DA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E9590BC11F15172B005D97DA /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		E9590BC21F15172B005D97DA /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		E9590BC51F15703F005D97DA /* receitas.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = receitas.sql; sourceTree = "<group>"; };
+		E9B8191F1F14240D00CD553E /* VCReceitaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCReceitaItem.h; path = ViewController/VCReceitaItem.h; sourceTree = "<group>"; };
+		E9B819201F14240D00CD553E /* VCReceitaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCReceitaItem.m; path = ViewController/VCReceitaItem.m; sourceTree = "<group>"; };
 		E9C43FB41F0D898E00DE16EA /* iFoodPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFoodPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C43FB81F0D898E00DE16EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9C43FBA1F0D898E00DE16EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,6 +46,14 @@
 		E9C43FC31F0D898E00DE16EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C43FC61F0D898E00DE16EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C43FC81F0D898E00DE16EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F201CF1F1025FA006A1892 /* VCListaReceitas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCListaReceitas.h; path = ViewController/VCListaReceitas.h; sourceTree = "<group>"; };
+		E9F201D01F1025FA006A1892 /* VCListaReceitas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCListaReceitas.m; path = ViewController/VCListaReceitas.m; sourceTree = "<group>"; };
+		E9F201D21F1026ED006A1892 /* VCListaIngredientes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCListaIngredientes.h; path = ViewController/VCListaIngredientes.h; sourceTree = "<group>"; };
+		E9F201D31F1026ED006A1892 /* VCListaIngredientes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCListaIngredientes.m; path = ViewController/VCListaIngredientes.m; sourceTree = "<group>"; };
+		E9F201D51F102A74006A1892 /* VCListaCozinha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCListaCozinha.h; path = ViewController/VCListaCozinha.h; sourceTree = "<group>"; };
+		E9F201D61F102A74006A1892 /* VCListaCozinha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCListaCozinha.m; path = ViewController/VCListaCozinha.m; sourceTree = "<group>"; };
+		E9F201D81F1034AE006A1892 /* VCItemReceitaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCItemReceitaTableViewCell.h; path = ViewController/VCItemReceitaTableViewCell.h; sourceTree = "<group>"; };
+		E9F201D91F1034AE006A1892 /* VCItemReceitaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCItemReceitaTableViewCell.m; path = ViewController/VCItemReceitaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9590BC01F151650005D97DA /* libsqlite3.tbd in Frameworks */,
 				A030C43A69AD521ACBC01927 /* libPods-iFoodPlanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +76,33 @@
 				E787437823E0C3DA567FA34C /* Pods-iFoodPlanner.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E942FE2A1F0EEBC900795EA1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E942FE271F0EEBBB00795EA1 /* VCMainScreen.h */,
+				E942FE281F0EEBBB00795EA1 /* VCMainScreen.m */,
+				E9F201CF1F1025FA006A1892 /* VCListaReceitas.h */,
+				E9F201D01F1025FA006A1892 /* VCListaReceitas.m */,
+				E9F201D21F1026ED006A1892 /* VCListaIngredientes.h */,
+				E9F201D31F1026ED006A1892 /* VCListaIngredientes.m */,
+				E9F201D51F102A74006A1892 /* VCListaCozinha.h */,
+				E9F201D61F102A74006A1892 /* VCListaCozinha.m */,
+				E9F201D81F1034AE006A1892 /* VCItemReceitaTableViewCell.h */,
+				E9F201D91F1034AE006A1892 /* VCItemReceitaTableViewCell.m */,
+				E9B8191F1F14240D00CD553E /* VCReceitaItem.h */,
+				E9B819201F14240D00CD553E /* VCReceitaItem.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		E9590BC41F15701E005D97DA /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				E9590BC51F15703F005D97DA /* receitas.sql */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 		E9C43FAB1F0D898E00DE16EA = {
@@ -74,6 +126,8 @@
 		E9C43FB61F0D898E00DE16EA /* iFoodPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				E9590BC41F15701E005D97DA /* DB */,
+				E942FE2A1F0EEBC900795EA1 /* View Controller */,
 				E9C43FBA1F0D898E00DE16EA /* AppDelegate.h */,
 				E9C43FBB1F0D898E00DE16EA /* AppDelegate.m */,
 				E9C43FBD1F0D898E00DE16EA /* ViewController.h */,
@@ -83,6 +137,8 @@
 				E9C43FC51F0D898E00DE16EA /* LaunchScreen.storyboard */,
 				E9C43FC81F0D898E00DE16EA /* Info.plist */,
 				E9C43FB71F0D898E00DE16EA /* Supporting Files */,
+				E9590BC11F15172B005D97DA /* DBManager.h */,
+				E9590BC21F15172B005D97DA /* DBManager.m */,
 			);
 			path = iFoodPlanner;
 			sourceTree = "<group>";
@@ -98,6 +154,7 @@
 		EE88D8C3A45DB06908522639 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9590BBF1F151650005D97DA /* libsqlite3.tbd */,
 				D1AFD1E12C2E15D4E1366918 /* libPods-iFoodPlanner.a */,
 			);
 			name = Frameworks;
@@ -226,8 +283,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C43FBF1F0D898E00DE16EA /* ViewController.m in Sources */,
+				E9F201D11F1025FA006A1892 /* VCListaReceitas.m in Sources */,
+				E9F201D71F102A74006A1892 /* VCListaCozinha.m in Sources */,
 				E9C43FBC1F0D898E00DE16EA /* AppDelegate.m in Sources */,
+				E9F201D41F1026ED006A1892 /* VCListaIngredientes.m in Sources */,
 				E9C43FB91F0D898E00DE16EA /* main.m in Sources */,
+				E9B819211F14240D00CD553E /* VCReceitaItem.m in Sources */,
+				E942FE291F0EEBBB00795EA1 /* VCMainScreen.m in Sources */,
+				E9F201DA1F1034AE006A1892 /* VCItemReceitaTableViewCell.m in Sources */,
+				E9590BC31F15172B005D97DA /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +450,7 @@
 				E9C43FCD1F0D898E00DE16EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

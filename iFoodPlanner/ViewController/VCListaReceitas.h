@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
 @interface VCListaReceitas : UITableViewController
+
+@property(nonatomic, strong) NSArray *listaReceitas;
+@property(nonatomic, strong) DBManager *dbManager;
 
 @end

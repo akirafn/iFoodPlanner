@@ -22,6 +22,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"woodback"]]];
+    
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"receitas.sql"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,13 +36,21 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    NSInteger nroIngredientes = 0;
+    
+    if(nroIngredientes == 0){
+        UILabel *lblVazio = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height)];
+        [lblVazio setText:@"Nenhum ingrediente cadastrado"];
+        [lblVazio setTextColor:[UIColor blackColor]];
+        [lblVazio setTextAlignment:NSTextAlignmentCenter];
+        [self.tableView.backgroundView insertSubview:lblVazio atIndex:0];
+    }
+    
+    return nroIngredientes;
 }
 
 /*

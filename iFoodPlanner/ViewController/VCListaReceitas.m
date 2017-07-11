@@ -7,12 +7,14 @@
 //
 
 #import "VCListaReceitas.h"
+#import "VCItemReceitaTableViewCell.h"
 
 @interface VCListaReceitas ()
 
 @end
 
 @implementation VCListaReceitas
+@synthesize listaReceitas;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +24,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+     listaReceitas = @[
+                               @{@"titulo": @"Macarronada", @"ingrediente": @"macarrao", @"preparo":@"Cozinhe macarrao na agua fervente."},
+                               @{@"titulo": @"Arroz", @"ingrediente": @"arroz", @"preparo":@"Cozinhe arroz com agua em fogo brando ate levantar fervura."},
+                               @{@"titulo": @"Feijao", @"ingrediente": @"feijao", @"preparo":@"Cozinhe feijao com agua dentro da panela de pressao por 30 minutos."}
+                               ];
+    
+    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"woodback"]]];
+    
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"receitas.sql"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +44,32 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    NSInteger nroReceitas = listaReceitas.count;
+    
+    if(nroReceitas == 0){
+        UILabel *lblVazio = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height)];
+        [lblVazio setText:@"Nenhuma receita cadastrada"];
+        [lblVazio setTextColor:[UIColor blackColor]];
+        [lblVazio setTextAlignment:NSTextAlignmentCenter];
+        [self.tableView.backgroundView insertSubview:lblVazio atIndex:0];
+    }
+    
+    return nroReceitas;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    VCItemReceitaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemReceitaIdentifier" forIndexPath:indexPath];
     
-    // Configure the cell...
+    [cell.lblTitulo setText:[listaReceitas[indexPath.row] objectForKey:@"titulo"]];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

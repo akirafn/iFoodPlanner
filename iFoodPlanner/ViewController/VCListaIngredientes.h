@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
 @interface VCListaIngredientes : UITableViewController
+
+@property(nonatomic, strong) DBManager *dbManager;
 
 @end

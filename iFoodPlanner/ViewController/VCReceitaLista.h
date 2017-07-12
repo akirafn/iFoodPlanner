@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
-@interface VCReceitaLista : UIViewController
+@interface VCReceitaLista : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *listaVazia;
+@property(nonatomic, strong)NSArray *listaReceitas;
+@property(nonatomic, strong)DBManager *dbManager;
 
 @end

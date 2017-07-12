@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VCIngredienteItemCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *nomeIngrediente;
 
 @end

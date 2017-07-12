@@ -7,12 +7,14 @@
 //
 
 #import "VCListaIngredientes.h"
+#import "VCIngredienteItemCell.h"
 
 @interface VCListaIngredientes ()
 
 @end
 
 @implementation VCListaIngredientes
+@synthesize listaIngredientes;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +27,7 @@
     
     [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"woodback"]]];
     
-    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"receitas.sql"];
+    self.dbManager = [[DBManager alloc] initWithDatabaseFilename:@"dbreceitas.sql"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,7 +42,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger nroIngredientes = 0;
+    NSInteger nroIngredientes = self.listaIngredientes.count;
     
     if(nroIngredientes == 0){
         UILabel *lblVazio = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height)];
@@ -53,15 +55,14 @@
     return nroIngredientes;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    VCIngredienteItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IngredienteItemCellIdentifier" forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSInteger indexNome = [self.dbManager.arrColumnNames indexOfObject:@"nome"];
+    [cell.nomeIngrediente setText:[NSString stringWithFormat:@"%@", [[self.listaIngredientes objectAtIndex:indexPath.row] objectAtIndex:indexNome]]];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

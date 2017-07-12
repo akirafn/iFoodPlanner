@@ -12,5 +12,6 @@
 @interface VCListaIngredientes : UITableViewController
 
 @property(nonatomic, strong) DBManager *dbManager;
+@property(nonatomic, strong) NSArray *listaIngredientes;
 
 @end

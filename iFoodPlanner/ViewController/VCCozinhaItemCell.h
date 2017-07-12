@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VCCozinhaItemCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *titulo;
 
 @end
